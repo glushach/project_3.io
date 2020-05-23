@@ -4,12 +4,15 @@
   padding: 0;
 }
 
+html {
+  font-family: 'Roboto', sans-serif; 
+}
 .container{
   position: relative;
   width: 1140px;
   margin: 0 auto;
 }
-
+/* Секция №1 */
 .promo {
   padding: 39px 0 62px 0;
   height: 800px;
@@ -23,10 +26,8 @@
 
 .logo .logo_text {
   color: #ffffff;
-  font-family: Roboto;
   font-size: 15px;
   font-weight: 500;
-  line-height: 24px;
   text-transform: uppercase;
   text-align: center;
   margin-top: 14px;
@@ -34,13 +35,13 @@
 
 h1 {
   margin-top: 53px;
+  font-weight: 900;
 }
 
 .title {
   color: #f9bf3b;
-  font-family: "Roboto - Black";
   font-size: 41px;
-  font-weight: 400;
+  font-weight: 900;
   line-height: 24px;
   text-transform: uppercase;
   text-align: center;
@@ -53,7 +54,7 @@ h2.title{
 .simple .title_big {
   color: #ffffff;
   font-size: 80px;
-  font-weight: 400;
+  font-weight: 900;
   text-transform: uppercase;
   text-align: center;
   margin-top: 21px;
@@ -63,7 +64,6 @@ h2.title{
   padding: 0 13px;
   padding-top: 23px;
   color: #ffffff;
-  font-family: "Roboto Light";
   font-size: 21px;
     font-weight: 300;
   line-height: 28px;
@@ -72,12 +72,10 @@ h2.title{
 
 .promo .promo_text span {
   color: #f9bf3b;
-  font-family: "Roboto - Bold";
   font-weight: 700;
-  
 } 
 
-.promo .promo_btn {
+.promo .promo_btn, .gift .gift_btn {
   display: block;
   margin: 0 auto;
   margin-top: 73px;
@@ -89,10 +87,9 @@ h2.title{
   outline: none;
   /* `Контент кнопки */
   color: #ffffff;
+  font-family: 'Roboto Condensed Bold';
   text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.22);
-  font-family: "Roboto Сondensed";
   font-size: 21px;
-  font-weight: 400;
   line-height: 24px;
   text-transform: uppercase;
   cursor: pointer;
@@ -104,9 +101,8 @@ h2.title{
 
 .more .more_text {
   color: #ffffff;
-  font-family: "Roboto - Thin";
   font-size: 15px;
-  font-weight: 400;
+  font-weight: 100;
   text-transform: uppercase;
   text-align: center;
 }
@@ -125,7 +121,6 @@ h2.title{
 }
 
 .waiting .waiting_header, .finish .finish_header{
-  font-family: Roboto;
   font-size: 30px;
   font-weight: 400;
   text-transform: uppercase;
@@ -147,7 +142,6 @@ h2.title{
 
 .waiting .waiting_subheader {
   margin-top: 17px;
-  font-family: Roboto;
   font-size: 23px;
   font-weight: 400;
   text-align: center;
@@ -161,7 +155,7 @@ h2.title{
 }
 
 .waiting .waiting_wrapper .waiting_item {
-  width: 339px;
+  width: 340px;
   text-align: center;
 }
 
@@ -171,14 +165,13 @@ h2.title{
 
 .waiting .waiting_wrapper .waiting_item .waiting_descr {
   margin-top: 33px;
-  font-family: Roboto;
-  font-size: 15px;
   font-weight: 300;
+  font-size: 15px;
   line-height: 21px;
   color: #4a4a4a;
 }
 
-/* Третья секция */
+/* Секция №3*/
 .optimization {
   min-height: 500px;
   padding: 102px 0 107px 0;
@@ -186,9 +179,8 @@ h2.title{
 
 .optimization .optimization_header {
   margin-left: 391px;
-  font-family: "Roboto - Black";
   font-size: 29px;
-  font-weight: 400;
+  font-weight: 900;
   text-transform: uppercase;
   color: #299cbd;
 }
@@ -196,16 +188,14 @@ h2.title{
 .optimization .optimization_text {
   margin-top: 25px;
   margin-left: 391px;
-  font-family: "Roboto Light";
   font-size: 17px;
   font-weight: 300;
   line-height: 27px;
-  letter-spacing: normal;
+  text-align: justify;;
   color: #4a4a4a;
 }
 
 .optimization .optimization_text span {
-  font-family: "Roboto - Bold";
   font-weight: 700;
 }
 
@@ -216,6 +206,7 @@ h2.title{
   z-index: -1;
 }
 
+/* Секция №4 */
 .finish {
   min-height: 447px;
   padding: 86px 0 79px 0;
@@ -245,10 +236,96 @@ h2.title{
 
 .finish .finish_wrapper .finish_item .finish_descr {
   padding-top: 25px;
-  text-align: center;
-  font-family: Roboto;
-  font-size: 17px;
   font-weight: 300;
+  text-align: center;
+  font-size: 17px;
   line-height: 20px;
   color: #efefef;
+}
+
+/* Секция №4. ПРОДОЛЖЕНИЕ*/
+.gift {
+  min-height: 628px;
+  padding: 86px 0 87px 0;
+  background-color: #efefef;
+}
+
+.gift .gift_img {
+  display: block;
+  margin: 0 auto;
+}
+
+.gift .gift_text {
+  margin-top: 42px;
+  font-weight: 400;
+  color: #252525;
+  font-size: 30px;
+  line-height: 43px;
+  text-align: center;
+}
+
+/* Секция №5 */
+.first {
+  min-height: 515px;
+  padding: 89px 0 64px 0;
+}
+
+.first .first_img {
+  display: block;
+  margin: 0 auto;
+}
+
+.first .first_text {
+  margin-top: 37px;
+  color: #252525;
+  font-size: 30px;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.first .date {
+  margin-top: 30px;
+  color: #299cbd;
+  font-weight: 900;
+  font-size: 36px;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.first .first_subtitle{
+  margin-top: 25px;
+  color: #4a4a4a;
+  font-size: 23px;
+  font-weight: 400;
+  text-align: center;
+}
+
+/* Подвал сайта */
+footer {
+  min-height: 166px;
+  background-color: #1a1a1a;
+  padding: 61px 0 69px 0;
+}
+
+.info {
+  margin: 0 auto;
+  width: 377px;
+  text-align: center;
+  color: #888888;
+  font-size: 15px;
+  line-height: 21px;
+}
+
+footer a {
+  color: #888888;
+  font-size: 15px;
+  line-height: 21px;
+  text-decoration: none;
+}
+
+.underlined {
+  border-bottom: 1px solid #888888;
+  font-weight: 300;
 }
