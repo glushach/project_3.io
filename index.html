@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
   <link rel="stylesheet" href="css/fonts.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/media.css">
 </head>
 <body>
   <section class="promo">
@@ -22,10 +23,9 @@
       <h1 class="title">
         Создать свой сайт на WordPress
       </h1>
-      <div class="simple">
-        <h2 class="title_big">это просто!</h2>
-        <div class="line">
-
+      <div class="simple_wrapper">
+        <div class="simple">
+          <h2 class="title_big">это просто!</h2>
         </div>
       </div>
       <h2 class="title">
@@ -143,7 +143,7 @@
     </div>
   </section>
 
-  <section class="gift">
+  <div class="gift">
     <div class="container">
         <img src="icons/gift.png" alt="gift" class="gift_img">
         <div class="gift_text">
@@ -151,7 +151,7 @@
         </div>
         <button class="gift_btn">Записаться на интенсив!</button>
     </div>
-  </section>
+  </div>
 
   <section class="first">
       <div class="container">
@@ -166,10 +166,10 @@
       <div class="info">
           <div class="info_links">
               <a href="#" class="underlined">Служба поддержки</a> <!-- # в ссылках используется как заглушка. Когда мы никуда не хотим переходить -->
-              |
-              <a href="#" class="underlined">Политика конфиденциальности</a>
-          </div>
+              <span>|</span>
+              <a href="#" class="underline_big">Политика конфиденциальности</a>
           Позвоните нам <a href="tel:+88005550121">8-800-555-01-21</a> <!-- Ссылки можно создавать для быстрых звонков и отправки електронных писем (mailto) -->
+          </div>
       </div>
   </footer>
   

@@ -9,13 +9,13 @@ html {
 }
 .container{
   position: relative;
-  width: 1140px;
+  max-width: 1140px;
   margin: 0 auto;
 }
 /* Секция №1 */
 .promo {
   padding: 39px 0 62px 0;
-  height: 800px;
+  min-height: 200px;
   background: url('../img/bg/main_bg.jpg') center center/cover no-repeat;
 }
 
@@ -51,21 +51,43 @@ h2.title{
   margin-top: 30px;
 }
 
+.simple_wrapper {
+  max-width: 1140px;
+}
 .simple .title_big {
   color: #ffffff;
   font-size: 80px;
+  line-height: 80px;
   font-weight: 900;
   text-transform: uppercase;
   text-align: center;
   margin-top: 21px;
+  position: relative;
 }
+.title_big::before, .title_big::after {
+  content: '';
+  width: 295px;
+  height: 2px;
+  background-color: #ffffff;
+  position: absolute;
+  top: 50%;
+}
+.title_big::before {
+  margin-left: -100%;
+  right: 6px;
+}
+.title_big::after {
+  margin-right: -100%;
+  left: 6px;
+}
+
 
 .promo .promo_text {
   padding: 0 13px;
   padding-top: 23px;
   color: #ffffff;
   font-size: 21px;
-    font-weight: 300;
+  font-weight: 300;
   line-height: 28px;
   text-align: center;
 }
@@ -155,8 +177,9 @@ h2.title{
 }
 
 .waiting .waiting_wrapper .waiting_item {
-  width: 340px;
+  max-width: 340px;
   text-align: center;
+  margin: 0 10px;
 }
 
 .waiting .waiting_wrapper .waiting_item .waiting_img {
@@ -178,7 +201,8 @@ h2.title{
 }
 
 .optimization .optimization_header {
-  margin-left: 391px;
+  margin-right: 10px;
+  text-align: right;
   font-size: 29px;
   font-weight: 900;
   text-transform: uppercase;
@@ -186,8 +210,9 @@ h2.title{
 }
 
 .optimization .optimization_text {
-  margin-top: 25px;
-  margin-left: 391px;
+  margin: 25px 10px 0px auto;
+  max-width: 743px;
+  text-align: right;
   font-size: 17px;
   font-weight: 300;
   line-height: 27px;
@@ -221,6 +246,7 @@ h2.title{
 
 .finish .finish_wrapper .finish_item {
   width: 204px;
+  margin: 0 5px;
 }
 
 .finish .finish_wrapper .finish_item .finish_round {
@@ -256,7 +282,7 @@ h2.title{
 }
 
 .gift .gift_text {
-  margin-top: 42px;
+  margin: 42px 10px 0px 10px;
   font-weight: 400;
   color: #252525;
   font-size: 30px;
@@ -267,7 +293,7 @@ h2.title{
 /* Секция №5 */
 .first {
   min-height: 515px;
-  padding: 89px 0 64px 0;
+  padding: 89px 10px 64px 10px;
 }
 
 .first .first_img {
@@ -329,3 +355,11 @@ footer a {
   border-bottom: 1px solid #888888;
   font-weight: 300;
 }
+
+.underline_big {
+  border-bottom: 1px solid #888888;
+  font-weight: 300;
+}
+
+
+
